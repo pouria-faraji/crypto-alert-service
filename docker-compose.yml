@@ -1,0 +1,14 @@
+---
+services: 
+  crypto-alert-service: 
+    container_name: crypto-alert-service
+    build: 
+      context: ./
+      target: main-image
+      dockerfile: Dockerfile
+    image: crypto-alert-service
+    ports: 
+      - "7000:7000"
+    environment: .env
+version: "2.3"
+
