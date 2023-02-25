@@ -45,7 +45,6 @@ WORKDIR /usr/src/app
 
 COPY pyproject.toml .
 COPY poetry.lock .
-RUN poetry config http-basic.iot-device-datamodel iot-platform-datamodel.poetry GwpKXE1DjVB-AepvgtfP && poetry install --no-root
 COPY . .
 RUN poetry install
 
