@@ -1,4 +1,4 @@
-# Crypto Alert Service
+# Automated Crypto Data Fetching and Alert System via Telegram
 This is a service which fetches data of some cryptocurrencies every 2 hours, and send Telegram alert messages automatically based on specific conditions.
 
 The application is developed in Python and APIs are implemented using [FastAPI](https://fastapi.tiangolo.com/).
