@@ -1,5 +1,5 @@
 # Crypto Alert Service
-This is a service which fetches data of some cryptocurrencies every 2 hours, and send Telegram messages automatically based on some rules.
+This is a service which fetches data of some cryptocurrencies every 2 hours, and send Telegram alert messages automatically based on specific conditions.
 
 The application is developed in Python and APIs are implemented using [FastAPI](https://fastapi.tiangolo.com/).
 
@@ -36,7 +36,7 @@ class Token(BaseModel):
     percent_change_7d: Optional[float]
 ```
 
-## Rules
+## Conditions
 The alerts are sent to the Telegram if any of the following two conditions are met:
 - The change percentage of 1 hour, or 24 hours, or 7 days is less than -10%
 - The change percentage of 1 hour, or 24 hours, or 7 days is more than 20%
